@@ -5,7 +5,6 @@ export class Feed extends React.Component {
     render() {
         return (
             <div>
-                churros
             </div>
         )
     }
