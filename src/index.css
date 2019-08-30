@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.MuiToggleButton-root.Mui-selected {
+  background-color: #3f51b5 !important;
+  color: white !important;
+}
+
+.MuiSwitch-colorSecondary.Mui-checked {
+  color: #00A8E6 !important;
+}

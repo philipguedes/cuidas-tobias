@@ -10,7 +10,9 @@ const ACTIVITIES = ['Corrida', 'Meditação', 'Yoga', 'Caminhada'];
 const THEMES = [
   'Saúde mental saudável', 'Ansiedade', 'Depressão',
   'Suicídio', 'Esquizofrenia', 'Psicose', 'Demência',
-  'Autismo', 'Transtornos de sexualidade', 'Transtornos alimentares'
+  'Autismo', 'Borderline', 'Transtornos de sexualidade',
+  'Transtornos alimentares', 'Transtornos bipolar',
+  'Dependência química', 'Transtornos dissociativos',
 ];
 
 const marks = [
@@ -217,6 +219,7 @@ export const Registration = (props) => {
         <Switch
           checked={show}
           onChange={() => setShow(!show)}
+          color="primary"
         /> <p className="font-h2">Sinto alguma preocupação sobre a minha saúde mental</p>
       </div>
       <VSeparator />

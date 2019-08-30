@@ -7,11 +7,10 @@ import { ProfessionalCard } from '../components/professional-card';
 
 export class Feed extends React.Component {
     render() {
-        console.log('red');
         return (
             <div style={{ paddingRight: '13rem', paddingLeft: '13rem' }}>
                 <Header />
-                <p className="font-h1">Bem vindo, Gabriel!</p>
+                <p className="font-h1">Bem vindo, Fernandos!</p>
                 <VSeparator />
                 <VSeparator />
                 <p className="font-h2">Baseado nos seus interesses, recomendamos os seguintes eventos:</p>
