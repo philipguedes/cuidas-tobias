@@ -8,7 +8,7 @@ export class Header extends React.Component {
             <div style={{ maxWidth: '1130px', width: '100%' }}>
                 <VSeparator />
                 <div style={{ width: '100%', display: 'flex', alignItems: 'center' }}>
-                    <Link to="/" style={{ color: 'black', textDecoration: 'none', width: '100%', display: 'flex', alignItems: 'center' }}>
+                    <Link to="/feed" style={{ color: 'black', textDecoration: 'none', width: '100%', display: 'flex', alignItems: 'center' }}>
                         <img src={require('../logo.svg')} height={34} width={34} style={{ display: 'inline' }} />
                         <HSeparator />
                         <p className="font-logo">Tobias</p>
