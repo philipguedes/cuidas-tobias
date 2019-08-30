@@ -1,15 +1,14 @@
+import { Button, Container, TextField, Typography } from '@material-ui/core';
 import * as React from 'react';
-import { Container, Typography, Button, TextField } from '@material-ui/core';
+import { VSeparator } from '../components/separators';
 
 export class BasicInfos extends React.Component {
     state = {
         name: ''
     }
     render() {
-        console.log(this.state)
         return (
             <Container maxWidth="sm">
-                <Typography variant="subtitle1" component="h4">Nome</Typography>
                 <TextField
                     id="standard-name"
                     label="name"
@@ -17,6 +16,7 @@ export class BasicInfos extends React.Component {
                     onChange={e => this.setState({ name: e.target.value })}
                     margin="normal"
                 />
+                <VSeparator />
 
                 <div style={{ display: 'flex', flexDirection: 'row' }}>
                     <div style={{ flex: 1 }}>
@@ -55,5 +55,9 @@ export class BasicInfos extends React.Component {
                 </div>
             </Container>
         )
+    }
+
+    submit = () => {
+        console.log(this.state);
     }
 }
