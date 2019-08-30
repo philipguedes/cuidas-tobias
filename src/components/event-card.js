@@ -23,7 +23,7 @@ export class EventCard extends React.Component {
         }
 
         return (
-            <Link to={`/eventos/${this.props.data.name}`}>
+            <Link to={`/eventos/${this.props.data.name}`} style={{color: 'black', textDecoration: 'none'}}>
                 <div className="event-card-card">
                     <div className="event-card-image">
                         {badgeT && <div className="event-card-badge" style={{ backgroundColor: c }}>{badgeT}</div>}
