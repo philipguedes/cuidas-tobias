@@ -1,10 +1,11 @@
 import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
-import { BrowserRouter as Router, Route } from 'react-router-dom'
-import { Feed } from './pages/feed';
-import { SeriousnessMap } from './pages/seriousness-map';
 import { BasicInfos } from './pages/basic-infos';
+import { EventPage } from './pages/event';
+import { Feed } from './pages/feed';
 import Registration from './pages/registration';
+import { SeriousnessMap } from './pages/seriousness-map';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/registration" component={Registration} />
         <Route path="/registration0" component={BasicInfos} />
         <Route path="/registration1" component={SeriousnessMap} />
+        <Route path="/eventos/:name" component={EventPage} />
       </Router>
     </div>
   );
