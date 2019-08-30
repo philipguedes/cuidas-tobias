@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export class Header extends React.Component {
     render() {
         return (
-            <div>
+            <div style={{ maxWidth: '1130px', width: '100%' }}>
                 <VSeparator />
                 <div style={{ width: '100%', display: 'flex', alignItems: 'center' }}>
                     <Link to="/" style={{ color: 'black', textDecoration: 'none', width: '100%', display: 'flex', alignItems: 'center' }}>
