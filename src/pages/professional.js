@@ -17,7 +17,7 @@ export class ProfessionalsPage extends React.Component {
                             <img src={require('../assets/round-person-big.png')} width={100} height={100} />
                             <HSeparator />
                             <div>
-                                <p className="font-h1" style={{ color: 'white' }}>Marina A. Linda</p>
+                                <p className="font-h1" style={{ color: 'white' }}>{this.props.match.params.name}</p>
                                 <VSeparator />
                                 <div style={{ display: 'flex', alignItems: 'center' }}>
                                     <div style={{ color: 'white', border: '1px solid white', padding: 10, height: '1rem' }}><p className="font-h3" style={{ fontSize: '50%', margin: 0 }}>PROFISSIONAL</p></div>
