@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Slider, Container, Typography, Button, TextField } from '@material-ui/core';
+import { Container, Typography, Button, TextField } from '@material-ui/core';
 
 export class BasicInfos extends React.Component {
     state = {
@@ -18,34 +18,41 @@ export class BasicInfos extends React.Component {
                     margin="normal"
                 />
 
-                <Typography variant="subtitle1" component="h4">eu me senti calmo e relaxado</Typography>
-                <TextField
-                    id="standard-name"
-                    label="birthday"
-                    value={this.state.birthday}
-                    onChange={e => this.setState({ birthday: e.target.value })}
-                    margin="normal"
-                />
+                <div style={{ display: 'flex', flexDirection: 'row' }}>
+                    <div style={{ flex: 1 }}>
+                        <Typography variant="subtitle1" component="h4">Data de Nascimento</Typography>
+                        <TextField
+                            id="standard-name"
+                            label="birthday"
+                            value={this.state.birthday}
+                            onChange={e => this.setState({ birthday: e.target.value })}
+                            margin="normal"
+                        />
+                    </div>
+                    <div style={{ flex: 1 }}>
+                        <Typography variant="subtitle1" component="h4">Sexo</Typography>
+                        <TextField
+                            id="standard-name"
+                            label="sex"
+                            value={this.state.sex}
+                            onChange={e => this.setState({ sex: e.target.value })}
+                            margin="normal"
+                        />
+                    </div>
+                </div>
 
-                <Typography variant="subtitle1" component="h4">eu me senti ativo e engergetico</Typography>
-                <TextField
-                    id="standard-name"
-                    label="sex"
-                    value={this.state.sex}
-                    onChange={e => this.setState({ sex: e.target.value })}
-                    margin="normal"
-                />
-
-                <Typography variant="subtitle1" component="h4">eu acordei me sentido descansado</Typography>
+                <Typography variant="subtitle1" component="h4">Profissão</Typography>
                 <TextField
                     id="standard-name"
                     label="profession"
                     value={this.state.profession}
                     onChange={e => this.setState({ profession: e.target.value })}
                     margin="normal"
-                />  
+                />
 
-                <Button variant="contained" color="primary" onClick={this.submit}>Enviar</Button>
+                <div>
+                    <Button variant="contained" color="primary" onClick={this.submit}>Enviar</Button>
+                </div>
             </Container>
         )
     }
