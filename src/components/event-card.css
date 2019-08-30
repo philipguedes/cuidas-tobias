@@ -5,13 +5,18 @@
     display: flex;
     flex-direction: column;
     padding: 7px;
-    border: 1px solid #DDDDDD
+    border: 1px solid #DDDDDD;
+    justify-content: space-between
 }
 
 .event-card-image {
     background-color: #e5e5e5;
     width: 100%;
-    height: 60%;
+    height: 75%;
+}
+.event-card-image img{
+    /* margin-top: -18px; */
+    z-index: -1000;
 }
 
 .event-card-badge {
@@ -20,6 +25,7 @@
     font-size: 50%;
     display: inline-block;
     padding: 3px;
+    position: absolute;
 }
 
 .event-card-photo-ic {

@@ -23,19 +23,20 @@ export class EventCard extends React.Component {
         }
 
         return (
-            <Link to={`/eventos/${this.props.data.name}`} style={{color: 'black', textDecoration: 'none'}}>
+            <Link to={`/eventos/${this.props.data.name}`} style={{ color: 'black', textDecoration: 'none' }}>
                 <div className="event-card-card">
-                    <div className="event-card-image">
-                        {badgeT && <div className="event-card-badge" style={{ backgroundColor: c }}>{badgeT}</div>}
-
+                    <div>
+                        <div className="event-card-image">
+                            {badgeT && <div className="event-card-badge" style={{ backgroundColor: c }}>{badgeT}</div>}
+                            <img style={{ width: '100%', height: '100%' }} src={require('../assets/cover' + this.props.index + '.png')} />
+                        </div>
+                        <p className="font-h2">{this.props.data.name}</p>
                     </div>
-                    <p className="font-h2">{this.props.data.name}</p>
-                    <div style={{ display: 'flex', alignItems: 'center' }}>
-                        <div className="event-card-photo-ic" />
+                    <div style={{ display: 'flex' }}>
+                        <img src={require('../assets/Agenda.svg')} />
                         <HSeparator />
-                        <p>Organizador</p>
+                        20 set 2019 - 18:00
                     </div>
-                    <HLine />
                 </div>
             </Link>
         )

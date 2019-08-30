@@ -18,10 +18,10 @@ export class Feed extends React.Component {
                 <VSeparator />
                 <div style={{ width: '100vw', display: 'flex', backgroundColor: '#EBF7FD', paddingTop: '2rem', paddingBottom: '2rem', marginLeft: '-13rem' }}>
                     <div style={{ paddingRight: '13rem', paddingLeft: '13rem', display: 'flex' }}>
-                        {data.featured.map(e => {
+                        {data.featured.map((e, index) => {
                             return (
                                 <div style={{ display: 'flex' }}>
-                                    <EventCard data={e} />
+                                    <EventCard data={e} key={index} index={index}/>
                                     <HSeparator />
                                 </div>
                             )
@@ -32,10 +32,10 @@ export class Feed extends React.Component {
                 <p className="font-h3" style={{ color: '#00A8E6' }}>OFICINAS</p>
                 <div style={{ display: 'flex' }}>
                     <div style={{ display: 'flex' }}>
-                        {data.workshops.map(e => {
+                        {data.workshops.map((e, index) => {
                             return (
                                 <div style={{ display: 'flex' }}>
-                                    <EventCard data={e} />
+                                    <EventCard data={e} key={index} index={3+index}/>
                                     <HSeparator />
                                 </div>
                             )
@@ -46,10 +46,10 @@ export class Feed extends React.Component {
                 <p className="font-h3" style={{ color: '#8CC14C' }}>ENCONTROS</p>
                 <div style={{ display: 'flex' }}>
                     <div style={{ display: 'flex' }}>
-                        {data.meetings.map(e => {
+                        {data.meetings.map((e, index) => {
                             return (
                                 <div style={{ display: 'flex' }}>
-                                    <EventCard data={e} />
+                                    <EventCard data={e} index={7+index}/>
                                     <HSeparator />
                                 </div>
                             )
@@ -60,10 +60,10 @@ export class Feed extends React.Component {
                 <p className="font-h3" style={{ color: '#FAA732' }}>ATIVIDADES</p>
                 <div style={{ display: 'flex' }}>
                     <div style={{ display: 'flex' }}>
-                        {data.activities.map(e => {
+                        {data.activities.map((e, index) => {
                             return (
                                 <div style={{ display: 'flex' }}>
-                                    <EventCard data={e} />
+                                    <EventCard data={e}  index={10+index}/>
                                     <HSeparator />
                                 </div>
                             )
@@ -74,10 +74,10 @@ export class Feed extends React.Component {
                 <p className="font-h3" style={{ color: '#DA314B' }}>PROFISSIONAIS</p>
                 <div style={{ display: 'flex' }}>
                     <div style={{ display: 'flex' }}>
-                        {data.professionals.map(e => {
+                        {data.professionals.map((e, index) => {
                             return (
                                 <div style={{ display: 'flex' }}>
-                                    <EventCard data={e} />
+                                    <EventCard data={e} index={index}/>
                                     <HSeparator />
                                 </div>
                             )
