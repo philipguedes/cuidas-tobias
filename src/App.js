@@ -11,8 +11,8 @@ function App() {
     <div className="app">
 
       <Router>
-        <Route path="/" component={Registration} />
-        <Route path="/feed" exact component={Feed} />
+        <Route path="/" exact component={Registration} />
+        <Route path="/feed" component={Feed} />
         <Route path="/eventos/:name" component={EventPage} />
         <Route path="/profissionais/:name" component={ProfessionalsPage} />
       </Router>

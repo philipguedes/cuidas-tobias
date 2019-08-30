@@ -61,7 +61,7 @@ export const Registration = (props) => {
     };
 
     console.log('create user', body);
-    props.history.push('/');
+    props.history.push('/feed');
   }
 
   const handleTheme = (v) => {
