@@ -1,14 +1,15 @@
 import * as React from 'react';
 import './professional-card.css';
 import { HSeparator } from './separators';
+import { Link } from 'react-router-dom';
 
-export class ProfessionalCard extends React.Component{
+export class ProfessionalCard extends React.Component {
     render() {
-        return(
+        return (
             <div className="professional-card-card">
-                <div>
-                    <div style={{display:'flex', alignItems: 'center', color: '#444444'}}>
-                        <img src={require('../assets/round-person'+this.props.index+'.png')} width={60} height={60}/>
+                <Link to={`/profissionais/${this.props.name}`} style={{color: 'black', textDecoration: 'none'}}>
+                    <div style={{ display: 'flex', alignItems: 'center', color: '#444444' }}>
+                        <img src={require('../assets/round-person' + this.props.index + '.png')} width={60} height={60} />
                         <HSeparator />
                         <div>
                             <p className="font-h3">{this.props.name}</p>
@@ -17,7 +18,7 @@ export class ProfessionalCard extends React.Component{
                     </div>
                     <p>Organizadora</p>
                     <p>Suicídio é sério, vamos enfrentar juntos, estresse pós-traumatico: estratégias de apoio</p>
-                </div>
+                </Link>
             </div>
         )
     }

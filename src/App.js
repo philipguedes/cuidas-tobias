@@ -6,6 +6,7 @@ import { EventPage } from './pages/event';
 import { Feed } from './pages/feed';
 import Registration from './pages/registration';
 import { SeriousnessMap } from './pages/seriousness-map';
+import { ProfessionalsPage } from './pages/professional';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/registration0" component={BasicInfos} />
         <Route path="/registration1" component={SeriousnessMap} />
         <Route path="/eventos/:name" component={EventPage} />
+        <Route path="/profissionais/:name" component={ProfessionalsPage} />
       </Router>
     </div>
   );
